@@ -97,7 +97,7 @@ EXPOSE 8071
 HEALTHCHECK CMD curl --fail --silent --show-error http://localhost:8071/healthcheck || exit 1
 
 # Change to nexus user
-#USER nexus
+# USER nexus
 
 ENV JAVA_OPTS="-Djava.util.prefs.userRoot=${SONATYPE_WORK}/javaprefs"
 
